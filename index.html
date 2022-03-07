@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html>
+<!----------------------- Head ----------------------->
+
     <head>
             <Title>UPO Website</Title>
             <link rel="stylesheet" href="stylesheet.css">
-            <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    </head>
+            <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+    </head>
+
+<!----------------------- Body ----------------------->
+
     <body>
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <div class="menu">
-                    <button class="menuItem">Donate</button>
-                    <button class="menuItem">About Us</button>
-                    <button class="menuItem">Community</button>
-                    <button class="menuItem">Contact</button>
-                    <button class="menuItem">Member Login</button>
-                </div>
-            </nav>
+
+        <!--------------- Nav Bar --------------->
+
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <div class="menu">
+                <button class="menuItem">Donate</button>
+                <button class="menuItem">About Us</button>
+                <button class="menuItem">Community</button>
+                <button class="menuItem">Contact</button>
+                <button class="menuItem">Member Login</button>
+            </div>
+        </nav>
+
+        <!--------------- Page Layout --------------->
+
+        <section class="page">
+
+            <!---------- Banner ---------->
+
             <header>
                 <h1>United Professional Organizers</h1>
                 <div class="dots">
@@ -24,27 +40,33 @@
                     <span class="dot"></span>
                 </div>
             </header>
-            <div class="stripOne">
+
+            <!---------- Donate Strip ---------->
+
+            <div id="donateStrip" class="strip">
                 <div class="textBox">
-                    <p class="textHeader">
+                    <p class="tagline">
                         Representing campaign workers and organizers alike.
                     </p>
                     <p>
                         Founded in Austin Texas, our mission is to secure dignity and good pay for workers everywhere, lift up current and aspiring organizers, and break down barriers so that every great cause can have a great campaign.
                     </p>
                 </div>
-                <div class="donateToday">
-                    <h2>Donate Today</h2>
-                    <button>Donate</button>
+                <div id="donateTodayBox" class="actionBox">
+                    <h2 class="titleText">Donate Today</h2>
+                    <button class="button">Donate</button>
                 </div>
             </div>
-            <div class="stripTwo">
-                <div class="joinUnion">
-                    <h2>Join the Union</h2>
-                    <button>Sign Up</button>
+
+            <!---------- Join Strip ---------->
+
+            <div id="joinStrip" class="strip">
+                <div id="joinUnionBox" class="actionBox">
+                    <h2 class="titleText">Join the Union</h2>
+                    <button class="button">Sign Up</button>
                 </div>
                 <div class="textBox">
-                    <p class="textHeader">
+                    <p class="tagline">
                         Time to spread to political revolution.
                     </p>
                     <p>
@@ -53,8 +75,36 @@
                     </p>
                 </div>
             </div>
-            <div class="stripThree"></div>
-            <footer></footer>
 
+            <!---------- Mail List Strip ---------->
+
+            <div id="mailListStrip">
+                <div class="mailListContainer">
+                    <div class="mailListTextBox">
+                        <h2 class="titleText">Stay Up To Date</h2>
+                        <p class="mailListDescription">
+                            Join our email list to keep up on annoucments, acheiviments, and more involving our active efforts.
+                        </p>
+                    </div>
+                    <div class="emailSection">
+                        <div class="emailField">
+                            <p>Email</p>
+                        </div>
+                        <button class="submitEmailButton">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--------------- Footer --------------->
+
+        <footer>
+            <p>Follow us on social media!</p>
+            <div class="socials">
+                <img src="images/fb.png" class="socialButton">
+                <img src="images/tw.png" class="socialButton">
+                <img src="images/ig.png" class="socialButton">
+            </div>
+        </footer>
     </body>
 </html>
