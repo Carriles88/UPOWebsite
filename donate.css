@@ -1,0 +1,187 @@
+    /*---------- Var Elements ----------*/
+
+:root {
+    --Color1: #ffa800;
+    --Color2: #808080;
+    --Color3: #000000;
+}
+
+/*---------- Body ----------*/
+
+body {
+    font-family: 'Arvo', serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/*---------- Nav Bar ----------*/
+
+nav {
+    display: flex;
+    background-color: var(--Color1);
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+.logo {
+    height: 70px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+.menu {
+    margin: auto;
+}
+.menuItem {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--Color3);
+    padding: 20px;
+    width: 200px;
+    margin: 0px 0px;
+    cursor: pointer;
+    background-color: var(--Color1);
+    border: none;
+    text-align: center;
+}
+
+/*----------------- Page Grid -----------------*/
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*---------- Form ----------*/
+
+.form {
+    grid-area: topSection;
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--Color3);
+}
+.description {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -20px;
+}
+.arrow  {
+    height: 13px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.contributeToggle {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    align-items: center;
+    width: 400px;
+}
+.circleToggle {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: solid 2px var(--Color2);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contributeToggle p {
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0px 20px;
+}
+.billingDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subHeader {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.otherWays {
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: var(--Color2);
+    margin-bottom: -20px;
+}
+.info {
+    height: 20px;
+    margin: 2px;
+    cursor: pointer;
+}
+.stateZip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*---------- General Form Items ----------*/
+.textContainer {
+    height: 40px;
+    margin: 7px 0px;
+    border: solid 2px var(--Color2);
+    border-radius: 15px;
+    color: var(--Color2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: text;
+}
+.small {
+    width: 25vh;
+}
+.message {
+    height: 120px;
+    align-items: flex-start;
+}
+.textField {
+   margin: 10px;
+   font-weight: 600;
+}
+.submit {
+    height: 40px;
+    margin: 10px 0px;
+    background-color: var(--Color1);
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
+/*---------- Footer ----------*/
+
+footer {
+    display: flex;
+    height: 100px;
+    width: 100vw;
+    background-color: var(--Color1);
+    align-items: center;
+    justify-content: end;
+}
+footer p {
+    margin: 10px;
+    font-weight: 700;
+}
+.socials {
+    margin-right: 50px;
+}
+.socialButton {
+    background-color: #696969;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
